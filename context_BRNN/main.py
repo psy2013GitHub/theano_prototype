@@ -28,7 +28,7 @@ nb_epoch = 100
 
 #------------------------------ load data -------------------------
 print 'load WordVectorMat...'
-WordVectorMat, vocabDict = load_wordvector('context_BRNN/data/nearby_vectors.txt')
+WordVectorMat, vocabDict = load_wordvector('context_BRNN/data/*')
 WordVectorMat = np.array(WordVectorMat, dtype=theano.config.floatX)
 print WordVectorMat.shape
 # WordVectorMat = theano.shared(
@@ -37,8 +37,8 @@ print WordVectorMat.shape
 
 print 'load data...'
 X, Y = load_data({
-                  'context_BRNN/data/spam.100':1,
-                  'context_BRNN/data/no_spam.100':0
+                  'context_BRNN/data/*':1,
+                  'context_BRNN/data/*':0
                  },
                  vocabDict
 )
