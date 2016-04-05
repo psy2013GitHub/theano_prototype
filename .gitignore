@@ -1,6 +1,6 @@
 
 *.pyc
-*.txt
+#*.txt
 *.100
 *.sh
 *test*
