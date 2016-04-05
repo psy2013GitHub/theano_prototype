@@ -1,0 +1,5 @@
+
+# several facts about the tree_bank dictionary
+
+UNKNOWN_WORD = ""
+UNKNOWN_WORDS_IDX  = 0
